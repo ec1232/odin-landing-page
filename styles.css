@@ -1,0 +1,177 @@
+:root {
+    /* Colors from the design */
+    --dark-bg: #1F2937;
+    --hero-main: #F9FAF8;
+    --hero-secondary: #E5E7EB;
+    --button-blue: #3882F6;
+    --info-header: #1F2937;
+    --quote-bg: #E5E7EB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--dark-bg);
+    padding: 1rem 15%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--hero-main);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
+
+nav a {
+    color: var(--hero-secondary);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--dark-bg);
+    padding: 6rem 15%;
+    display: flex;
+    gap: 2rem;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--hero-main);
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    color: var(--hero-secondary);
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.placeholder {
+    background-color: #6b747e;
+    color: var(--hero-secondary);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+button {
+    background-color: var(--button-blue);
+    color: white;
+    border: none;
+    padding: 8px 32px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Info Section */
+.info {
+    padding: 3rem 15%;
+    text-align: center;
+}
+
+.info h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--info-header);
+    margin-bottom: 2rem;
+}
+
+.info-cards {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.card {
+    max-width: 200px;
+}
+
+.box {
+    border: 4px solid var(--button-blue);
+    border-radius: 8px;
+    height: 150px;
+    margin-bottom: 0.5rem;
+}
+
+/* Quote Section */
+.quote {
+    background-color: var(--quote-bg);
+    padding: 6rem 15%;
+}
+
+blockquote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    color: var(--info-header);
+}
+
+blockquote footer {
+    font-weight: bold;
+    text-align: right;
+    font-style: normal;
+    font-size: 24px;
+    margin-top: 1rem;
+}
+
+/* CTA Section */
+.cta {
+    padding: 5rem 15%;
+}
+
+.cta-container {
+    background-color: var(--button-blue);
+    color: white;
+    padding: 3rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta button {
+    border: 2px solid white;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-bg);
+    color: var(--hero-secondary);
+    text-align: center;
+    padding: 2rem;
+}
